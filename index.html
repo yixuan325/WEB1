@@ -4,11 +4,10 @@
 <head>
     <title>POPCAT CLASSIC</title>
     <meta name="author" content="Joshua O'Sullivan, Freddy Heppell, Edward Hails">
-
     <meta charset="UTF-8">
 
-    <meta name="msapplication-TileColor" content="#b721ff">
-    <meta name="theme-color" content="#b721ff">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap&text=0123456789" rel="stylesheet">
 
     <style>
         html { height:100%; overflow:hidden; }
@@ -140,8 +139,6 @@
         cat.innerHTML = pop_count
         setCookie("pop_count",pop_count,365)
 
-        /*Fire google analytics event for pop*/
-        // gtag('event', 'pop');
     }
     p_func = () => setTimeout(() => cat.id = "p", 25)
 
