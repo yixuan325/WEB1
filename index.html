@@ -4,10 +4,11 @@
 <head>
     <title>POPCAT CLASSIC</title>
     <meta name="author" content="Joshua O'Sullivan, Freddy Heppell, Edward Hails">
+
     <meta charset="UTF-8">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap&text=0123456789" rel="stylesheet">
+    <meta name="msapplication-TileColor" content="#b721ff">
+    <meta name="theme-color" content="#b721ff">
 
     <style>
         html { height:100%; overflow:hidden; }
@@ -32,7 +33,7 @@
             top:50%;left:50%;
             z-index:-1;
             transform:translate(-50%,-50%) rotate(-3deg);
-            background-image: url("imgs/bg.jpg");
+            background-image: url("https://classic.popcat.click/imgs/bg.jpg");
             background-repeat: repeat-x;
             background-size: contain;
         }
@@ -69,8 +70,8 @@
                 -webkit-text-stroke-width: 1.5px;
             }
         }
-        #p { background-image: url("imgs/p.png"); }
-        #op { background-image: url("imgs/op.png"); }
+        #p { background-image: url("https://classic.popcat.click/imgs/p.png"); }
+        #op { background-image: url("https://classic.popcat.click/imgs/op.png"); }
     </style>
 </head>
 
@@ -139,6 +140,8 @@
         cat.innerHTML = pop_count
         setCookie("pop_count",pop_count,365)
 
+        /*Fire google analytics event for pop*/
+        // gtag('event', 'pop');
     }
     p_func = () => setTimeout(() => cat.id = "p", 25)
 
